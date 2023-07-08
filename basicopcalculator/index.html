@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Calculadora</title>
+</head>
+<body>
 
+    <h1 class="mainTitle">Calculadora de Operações Básicas</h1>
+
+    <div class="container">
+    
+        <h4 class="numTitle">Número 1</h4>
+        <input id="n1" type="number"> 
+
+        <h4 class="numTitle">Número 2</h4>
+        <input id="n2" type="number"> <br><br><br>
+
+        <button class="button" onclick="somar()">Somar</button>
+        <button class="button" onclick="subtrair()">Subtrair </button>
+        <button class="button" onclick="multiplicar()">Multiplicar</button>
+        <button class="button" onclick="dividir()">Dividir</button>
+        <br><br>
+
+        <h4 class="resultado">O resultado é <span></span>
+
+
+    </div>
+
+
+<script>
+
+var n1 = document.querySelector('#n1')
+var n2 = document.querySelector('#n2')
+var resultado = document.querySelector('span')
+
+function somar() {
+    resultado.innerHTML = parseInt(n1.value) + parseInt(n2.value)
+}
+
+
+function subtrair() {
+    resultado.innerHTML = parseInt(n1.value) - parseInt(n2.value)
+}
+
+function multiplicar() {
+    resultado.innerHTML = parseInt(n1.value) * parseInt(n2.value)
+}
+
+function dividir() {
+    resultado.innerHTML = parseInt(n1.value) / parseInt(n2.value)
+}
+
+
+</script>
+    
+
+
+</body>
+</html>
