@@ -1,1 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
 
+
+body {
+background-color: #f0f0f0;
+}
+
+.container {
+width: 700px;
+height: 400px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: rgb(155, 113, 168);
+border-radius: 10px;
+
+}
+
+.mainTitle, .numTitle, .button, .resultadoFrase, span {
+color: rgb(255, 255, 255);
+font-family: 'ABeeZee', sans-serif;
+
+
+
+}
+
+.mainTitle {
+position: absolute;
+left: 50%;
+top: 70px;
+transform: translate(-50%, -50%);
+font-family: 'ABeeZee', sans-serif;
+color: #1bbbb3;
+
+
+}
+
+.numTitle, .resultadoFrase, input {
+font-size: 18px;
+position: relative;
+left: 50px;
+}
+
+
+
+span {
+    color: #1bbbb3;
+
+}
+
+.button {
+background-color: #744596;
+height: 30px;
+width: 200px;
+border: none;
+color: white;
+transition-duration: 0.3s;
+position: relative;
+left: 50px;
+top: 10px;
+border-radius: 5px;
+}
+
+.button:hover {
+background-color: #1bbbb3;
+color: white;
+
+}
+
+
+.resultadoFrase {
+line-height: 27px;
+
+}
