@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
 
+    <title>Calculator for Nurses</title>
+</head>
+<body>
+
+
+    <h1 class="mainTitle">Drip Factor - Cálculo de Gotejamento</h1>
+
+    <div class="container">
+    
+    <br><h4 class="numTitle">Mililitros (ml)</h4>
+        <input id="volume" type="number"> 
+
+        <h4 class="numTitle">Tempo (horas)</h4>
+        <input id="tempo" type="number"> <br><br>
+
+        <button class="button" onclick="gotejamentoGotas(); ">Gotas/minuto</button>
+        <button class="button" onclick="gotejamentoMicro(); ">Microgotas/minuto</button>
+
+
+        <br><br>
+
+        <h4 class="resultadoFrase">O gotejamento adequado será de <span id="resultadoGotas"></span> gts/min <br>Ou então <span id="resultadoMicro"></span> microgotas/minuto </h4>
+
+
+    </div>
+
+
+
+
+</body>
+</html>
